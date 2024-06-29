@@ -1,0 +1,75 @@
+
+<form [formGroup]="formulario" novalidate (ngSubmit)="onSubmit()">
+    <mat-card class="shipping-card formCadastro">
+      <mat-card-content>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="nome" formControlName="nome">
+            </mat-form-field>
+          </div>
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="organização" formControlName="organizacao">
+            </mat-form-field>
+          </div>
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="descrição" formControlName="descricao">
+            </mat-form-field>
+          </div>
+          <mat-card-actions>
+            <button mat-raised-button [disabled]="!formulario.valid" color="primary" type="submit">Cadastrar</button>
+          </mat-card-actions>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>
+  
+  <table mat-table [dataSource]="relatorio" class="mat-elevation-z8">
+  
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+    
+      <!-- Position Column -->
+    
+      <ng-container matColumnDef="nome">
+        <th mat-header-cell *matHeaderCellDef> Nome </th>
+        <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+      </ng-container>
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="organizacao">
+        <th mat-header-cell *matHeaderCellDef> Organização </th>
+        <td mat-cell *matCellDef="let element"> {{element.organizacao}} </td>
+      </ng-container>
+    
+      <!-- Weight Column -->
+      <ng-container matColumnDef="descricao">
+        <th mat-header-cell *matHeaderCellDef> Descrição </th>
+        <td mat-cell *matCellDef="let element"> {{element.descricao}} </td>
+      </ng-container>
+    
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="assinatura">
+        <th mat-header-cell *matHeaderCellDef> Assinatura </th>
+        <td (click)="inserirAssinatura(element.id)" class="tdImg" mat-cell *matCellDef="let element">
+          <a >
+            <img class="minimg" src={{element.assinatura}}/> 
+          </a>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Deletar</th>
+        <td mat-cell *matCellDef="let element">
+          <button (click)="deletarRegistro(element.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    
+    
