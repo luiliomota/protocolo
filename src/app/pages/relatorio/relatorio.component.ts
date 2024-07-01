@@ -30,6 +30,7 @@ import { RelatorioService } from '../../services/relatorio.service';
 })
 
 export class RelatorioComponent implements OnInit{
+  
   relatorio: Registro[] = [];
   registro: Registro = new Registro();
 
@@ -44,10 +45,11 @@ export class RelatorioComponent implements OnInit{
   })
 
   constructor() {}
-  
-    ngOnInit(): void {
+
+ngOnInit(): void {
       this.getRelatorios();
-}
+      console.log(window.location.pathname);
+    }
 
     getRelatorios():void {
       this.service.getRegistros().subscribe(

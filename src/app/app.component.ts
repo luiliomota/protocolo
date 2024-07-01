@@ -20,6 +20,7 @@ import { MainComponent } from './pages/main/main.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'page_acesso';
 }
