@@ -1,5 +1,17 @@
 .larguraPagina {
     width: 80%;
     padding: 25px;
+    display: grid;
   }
+  
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 400 */
+
+.playwrite-ro {
+  font-family: "Playwrite RO", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: xx-large;
+}
   

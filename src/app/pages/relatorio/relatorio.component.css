@@ -4,18 +4,35 @@
     align-items: flex-start;
   }
   
-  .mat-mdc-table {
+  /* .mat-mdc-table {
     background-color: #0000001c;
+  } */
+
+  .mat-mdc-row {
+    font-family: "Playwrite RO", cursive;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 200;
+  }
+
+  .mat-mdc-raised-button:not(:disabled) {
+    color: #eaeaea;
   }
   
-  .mat-mdc-form-field-infix-input {
-    flex: auto;
+  .col[_ngcontent-ng-c544486001] {
+    display: inline-grid;
+  }
+  
+  .col[_ngcontent-ng-c1392487243] {
+    flex: 1;
+    margin-right: 1%;
     min-width: 0;
-    width: 100%;
-    position: relative;
-    box-sizing: border-box;
   }
-  
+
+  .mat-mdc-table {
+    table-layout: fixed;
+  }
+
   table {
     width: 100%;
   }

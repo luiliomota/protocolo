@@ -47,7 +47,7 @@ export class RelatorioComponent implements OnInit{
   
     ngOnInit(): void {
       this.getRelatorios();
-    }
+}
 
     getRelatorios():void {
       this.service.getRegistros().subscribe(

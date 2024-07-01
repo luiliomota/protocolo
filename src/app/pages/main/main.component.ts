@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { RouterOutlet } from '@angular/router';
+import { RelatorioComponent } from '../relatorio/relatorio.component';
 
 @Component({
   selector: 'app-main',
@@ -23,6 +24,7 @@ import { RouterOutlet } from '@angular/router';
     MatIconModule,
     AsyncPipe,
     RouterOutlet,
+    RelatorioComponent,
   ]
 })
 export class MainComponent {

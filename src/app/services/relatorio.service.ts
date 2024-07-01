@@ -1,7 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Registro } from '../models/registro';
+import { Router } from '@angular/router';
 
 const HttpOptions = {
   headers: new HttpHeaders({'Content-Type':'application/json'})
@@ -10,14 +11,18 @@ const HttpOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class RelatorioService {
+export class RelatorioService implements OnInit{
 
-  registro:Registro = new Registro();
+  ngOnInit(): void {
+  }
+  
+  private http = inject(HttpClient);
+  private router = inject(Router);
 
   // BASE_URL: string = 'http://localhost:3000/';
   BASE_URL: string = 'https://json-server.alf5.com.br/';
 
-  constructor(private http:HttpClient) { }
+  constructor() { }
 
   getRegistros():Observable<Registro[]> {
     let url:string = (this.BASE_URL + 'registro?_sort=id');
@@ -35,13 +40,8 @@ export class RelatorioService {
   }
 
   editRegistro(registro: any): Observable<Registro>{
-    this.registro = registro;
-    if(registro.nome) this.registro.nome = registro.nome;
-    if(registro.organizacao) this.registro.organizacao = registro.organizacao;
-    if(registro.descricao) this.registro.descricao = registro.descricao;
-    if(registro.assinatura) this.registro.assinatura = registro.assinatura;
     let url:string =  (this.BASE_URL + 'registro/' + registro.id);
-    return this.http.put<Registro>(url, this.registro, HttpOptions);
+    return this.http.put<Registro>(url, registro, HttpOptions);
   }
 
   deletRegistro(idRegistro: any): Observable<Registro> {
