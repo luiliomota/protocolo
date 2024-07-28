@@ -1,6 +1,6 @@
 # Protocolo
 
-Protótip de sistema de registro de protocolo com assinatura
+Protótipo de sistema de registro de protocolo com assinatura
 
 # PageAcesso
 
