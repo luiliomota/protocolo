@@ -5,12 +5,10 @@ Protótipo de sistema de registro de protocolo com assinatura
 https://acesso.alf5.com.br
 
 ## Tecnologias:
-![icon](https://github.com/user-attachments/assets/63195ad4-bca4-411e-9729-b83c47103e11)
-
-![icon](https://github.com/user-attachments/assets/7ba23097-a85d-4aea-82ad-54cc4f4e64d0)
-
-![icon](https://github.com/user-attachments/assets/2c2fe752-4a99-4413-ade7-bb38a78207c4)
-![imagem](https://github.com/user-attachments/assets/711f493e-4a15-4f5a-ad95-809649e783c8)
+![imagem](https://github.com/user-attachments/assets/9f167771-4743-429d-8307-878c4ef65636)
+![imagem](https://github.com/user-attachments/assets/7ba23097-a85d-4aea-82ad-54cc4f4e64d0)
+![imagem](https://github.com/user-attachments/assets/45d8cf22-525b-4b34-b602-862902ae597e)
+![imagem](https://github.com/user-attachments/assets/a683a64f-fa6e-44e8-8a00-c45c11304cdd)
 
 
 ![imagem](https://github.com/user-attachments/assets/56d6e8c5-ddca-4e4d-9648-f99b87afd403)
