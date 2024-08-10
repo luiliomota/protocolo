@@ -4,6 +4,12 @@ Protótipo de sistema de registro de protocolo com assinatura
 
 https://acesso.alf5.com.br
 
+## Tecnologias:
+HTML
+![icon](https://github.com/user-attachments/assets/7ba23097-a85d-4aea-82ad-54cc4f4e64d0) Type Script
+CSS
+Angular
+
 ![imagem](https://github.com/user-attachments/assets/56d6e8c5-ddca-4e4d-9648-f99b87afd403)
 
 
