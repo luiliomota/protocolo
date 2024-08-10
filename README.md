@@ -4,6 +4,9 @@ Protótipo de sistema de registro de protocolo com assinatura
 
 https://acesso.alf5.com.br
 
+![imagem](https://github.com/user-attachments/assets/56d6e8c5-ddca-4e4d-9648-f99b87afd403)
+
+
 # PageAcesso
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
