@@ -6,16 +6,16 @@ https://acesso.alf5.com.br
 
 ## Tecnologias:
 ![imagem](https://github.com/user-attachments/assets/8789fd86-f93c-4471-b080-3587578a32b4)
-HTML
+#### HTML
 
 ![imagem](https://github.com/user-attachments/assets/60aaba75-0968-4df5-bc80-f41883eb1913)
-TYPE SCRIPT
+#### TYPE SCRIPT
 
 ![imagem](https://github.com/user-attachments/assets/0cf5c156-baea-481c-9376-e21cd34cd675)
-CSS
+#### CSS
 
 ![imagem](https://github.com/user-attachments/assets/fc848810-862f-4ad3-971f-5145921487e5)
-ANGULAR
+#### ANGULAR
 
 
 ![imagem](https://github.com/user-attachments/assets/56d6e8c5-ddca-4e4d-9648-f99b87afd403)
