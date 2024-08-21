@@ -13,11 +13,9 @@ install_dependency-build:
   script:
     - echo "Instalação de dependências..."
     - apk update
-    - apk add --update nodejs
     - apk add --update npm
-    - npm install
     - npm install -g @angular/cli@17
-    - npm install -g http-server
+    - npm install
     - echo "Build da aplicação..."
     - ng build
 
